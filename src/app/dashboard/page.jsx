@@ -4,7 +4,6 @@ import Image from 'next/image'
 import { Fragment, useState } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
 import { XIcon, CalendarIcon, BellIcon, BarsArrowUpIcon, MagnifyingGlassIcon, ChevronDownIcon, FilterIcon } from '@/components/Icons/generalIcons'
-import { Avatar } from '@/components/avatar'
 import AngelaFisher from 'src/images/team/angela-fisher.jpg';
 import BenjaminRussel from 'src/images/team/benjamin-russel.jpg';
 import BlakeReid from 'src/images/team/blake-reid.jpg';
