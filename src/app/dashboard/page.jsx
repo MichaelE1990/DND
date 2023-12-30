@@ -349,13 +349,7 @@ function Activity() {
     )
 }
 
-const campaignMembers = [
-    { avatarUrl: AngelaFisher },
-    { avatarUrl: BenjaminRussel },
-    { avatarUrl: BlakeReid },
-    { avatarUrl: DriesVincent },
-    { avatarUrl: EmmaDorsey },
-];
+
 
 function DocumentIcon(props) {
     return (
@@ -365,15 +359,7 @@ function DocumentIcon(props) {
     );
 }
 
-function CampaignMembers({ users }) {
-    return (
-        <div className="flex items-center justify-center -space-x-2">
-            {users.map((user, index) => (
-                <Avatar key={index} src={user.avatarUrl} className="size-8 ring-1 ring-white dark:ring-zinc-900" />
-            ))}
-        </div>
-    );
-}
+
 
 const invoice = {
     subTotal: '$8,800.00',
@@ -667,7 +653,7 @@ export default function Example() {
                                     <div className="mt-4 flex w-full flex-none gap-x-4 px-6">
                                         <dt className="flex-none">
                                             <span className="sr-only">People in Campaign</span>
-                                            <CampaignMembers users={campaignMembers} />
+                                       
                                         </dt>
                                     </div>
                                 </dl>
