@@ -677,7 +677,7 @@ export default function Example() {
                                     <div className="mt-4 flex w-full flex-none gap-x-4 px-6">
                                         <dt className="flex-none">
                                             <span className="sr-only">People in Campaign</span>
-                                            <CampaignMembers users={campaignMembers} />
+                               
                                         </dt>
                                     </div>
                                 </dl>
@@ -733,7 +733,7 @@ export default function Example() {
                                     {people.map((person) => (
                                         <li key={person.email} className="flex items-center justify-between gap-x-6 py-5">
                                             <div className="flex min-w-0 gap-x-4">
-                                                <img className="h-12 w-12 flex-none rounded-full bg-gray-50" src={person.imageUrl} alt="" />
+                                                <Image className="h-12 w-12 flex-none rounded-full bg-gray-50" src={person.imageUrl} alt="" />
                                                 <div className="min-w-0 flex-auto">
                                                     <p className="text-sm font-semibold leading-6 text-gray-900">{person.name}</p>
                                                     <p className="mt-1 truncate text-xs leading-5 text-gray-500">{person.email}</p>
