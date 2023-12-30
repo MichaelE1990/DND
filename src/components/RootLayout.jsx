@@ -12,6 +12,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import clsx from 'clsx'
 import { motion, MotionConfig, useReducedMotion } from 'framer-motion'
+import Image from 'next/image'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
@@ -19,6 +20,8 @@ import { Footer } from '@/components/Footer'
 import { GridPattern } from '@/components/GridPattern'
 import { Logo, Logomark } from '@/components/Logo'
 import { Offices } from '@/components/Offices'
+import screenshotPayroll from '@/images/screenshots/payroll.png'
+import screenshotReporting from '@/images/screenshots/reporting.png'
 import { SocialMedia } from '@/components/SocialMedia'
 
 const RootLayoutContext = createContext(null)
@@ -46,8 +49,7 @@ const recentPosts = [
     title: 'Rulebooks',
     href: '#',
     category: { title: 'Resources', href: '#' },
-    imageUrl:
-      'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
+    imageUrl: {screenshotPayroll},
     description:
       'Discover the best ways to play an RPG through guidance and tutorials',
   },
@@ -56,8 +58,7 @@ const recentPosts = [
     title: 'Guides & Tutorials',
     href: '#',
     category: { title: 'Resources', href: '#' },
-    imageUrl:
-      'https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80',
+    imageUrl: {screenshotReporting},
     description: 'Get started with Tutorials',
   },
 ]
@@ -256,11 +257,13 @@ function Navigation() {
           >
             <div className="relative flex-none">
               <div className="relative flex-none">
-                <img
-                  className="aspect-[2/1] w-full rounded-lg bg-gray-100 object-cover md:aspect-[4/3] sm:h-32 sm:w-auto lg:h-auto"
-                  src={post.imageUrl}
-                  alt=""
-                />
+              <Image
+  className="aspect-[2/1] w-full rounded-lg bg-gray-100 object-cover md:aspect-[4/3] sm:h-32 sm:w-auto lg:h-auto"
+  src={screenshotPayroll}
+  alt=""
+
+/>
+
                 <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-gray-900/10" />
               </div>
               <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-gray-900/10" />
