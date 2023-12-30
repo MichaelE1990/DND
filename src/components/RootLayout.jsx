@@ -261,7 +261,6 @@ function Navigation() {
   className="aspect-[2/1] w-full rounded-lg bg-gray-100 object-cover md:aspect-[4/3] sm:h-32 sm:w-auto lg:h-auto"
   src={screenshotPayroll}
   alt=""
-
 />
 
                 <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-gray-900/10" />
