@@ -3,13 +3,8 @@
 import Image from 'next/image'
 import { Fragment, useState } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
-import { XIcon, CalendarIcon, BellIcon, BarsArrowUpIcon, MagnifyingGlassIcon, ChevronDownIcon, FilterIcon } from '@/components/Icons/generalIcons'
-import AngelaFisher from 'src/images/team/angela-fisher.jpg';
-import BenjaminRussel from 'src/images/team/benjamin-russel.jpg';
-import BlakeReid from 'src/images/team/blake-reid.jpg';
-import DriesVincent from 'src/images/team/dries-vincent.jpg';
+import { XIcon, CalendarIcon, BellIcon, MagnifyingGlassIcon, ChevronDownIcon, FilterIcon } from '@/components/Icons/generalIcons'
 import EmmaDorsey from 'src/images/team/emma-dorsey.jpg';
-import { Container } from '@/components/Container'
 
 const months = [
     {
@@ -349,8 +344,6 @@ function Activity() {
     )
 }
 
-
-
 function DocumentIcon(props) {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="w-6 h-6" {...props}>
@@ -358,8 +351,6 @@ function DocumentIcon(props) {
         </svg>
     );
 }
-
-
 
 const invoice = {
     subTotal: '$8,800.00',
@@ -593,7 +584,6 @@ const people = [
         href: '#',
     },
 ]
-
 
 export default function Example() {
     return (

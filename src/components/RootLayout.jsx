@@ -28,14 +28,13 @@ const RootLayoutContext = createContext(null)
 
 const features = [
   { name: 'Features', href: '/about', icon: SparklesIcon },
-  { name: 'Pricing', href: '#', icon: WalletIcon },
+  { name: 'Pricing', href: '/pricing', icon: WalletIcon },
   { name: 'News & Updates', href: '#', icon: MegaphoneIcon },
   { name: 'About Us', href: '/about', icon: InformationCircleIcon },
 ]
 
 const company = [
   { name: 'About Us', href: '#', icon: BookOpenIcon },
-  { name: 'Pricing', href: '#', icon: WalletIcon },
   { name: 'Blog', href: '#', icon: DocumentIcon },
   { name: 'News & Updates', href: '#', icon: NewspaperIcon },
   { name: 'Terms & Conditions', href: '#', icon: NewspaperIcon },

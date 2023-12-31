@@ -3,39 +3,10 @@
 import { useState } from 'react'
 import { RadioGroup } from '@headlessui/react'
 import clsx from 'clsx'
-
+import { CheckIcon } from './Icons/generalIcons'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Logomark } from '@/components/Logo'
-
-function CheckIcon({ className, ...props }) {
-    return (
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1}
-            stroke="currentColor"
-            className={`w-6 h- ${className}`}
-            {...props}
-        >
-            <circle
-                cx="12"
-                cy="12"
-                r="10"
-                stroke="currentColor"
-                fill="none"
-                opacity="0.1"
-            />
-            <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M9 12.75 11.25 15 15 9.75"
-                strokeWidth="0.7"
-            />
-        </svg>
-    );
-}
 
 const plans = [
     {
@@ -95,9 +66,6 @@ const plans = [
         logomarkClassName: 'fill-zinc-800 dark:fill-zinc-400',
     },
 ]
-
-
-  
 
 function Plan({
     name,
@@ -208,7 +176,6 @@ export function Pricing() {
                         <Plan key={plan.name} {...plan} activePeriod={activePeriod} />
                     ))}
                 </div>
-               
             </Container>
         </section>
 
